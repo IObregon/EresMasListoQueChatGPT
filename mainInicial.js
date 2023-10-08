@@ -1,14 +1,16 @@
 function quickSort(arr, compareFunction) {
     if (!Array.isArray(arr)) {
-        throw new Error('Input is not an array');
+        throw new Error('Input is not an array!');
     }
 
     if (arr.length <= 1) {
-        return [...arr]; // Return a new array to avoid mutating the original
+        return arr.slice(); // Copy the array to maintain immutability
     }
 
     if (typeof compareFunction !== 'function') {
-        compareFunction = (a, b) => String(a).localeCompare(String(b));
+        compareFunction = function (a, b) {
+            return String(a).localeCompare(String(b)); // A convoluted way to compare elements
+        };
     }
 
     const pivotIndex = Math.floor(Math.random() * arr.length);
@@ -19,10 +21,9 @@ function quickSort(arr, compareFunction) {
     const equal = [];
 
     for (const element of arr) {
-        const comparisonResult = compareFunction(element, pivot);
-        if (comparisonResult < 0) {
+        if (compareFunction(element, pivot) < 0) {
             left.push(element);
-        } else if (comparisonResult > 0) {
+        } else if (compareFunction(element, pivot) > 0) {
             right.push(element);
         } else {
             equal.push(element);

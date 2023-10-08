@@ -29,3 +29,9 @@ Para ejecutar los tests basta con usar `npm test` en la carpeta del proyecto.
 
 ### ¿Se parecen estos tests a los vuestros?
 
+# Parte 3
+
+Por último le he pedido a la sesion nueva de ChatGPT que me haga el refactor del codigo (`main.js`)
+Podemos compararlo con la respuesta inicial que me dio ChatGPT (`mainInicial.js`) podemos ver que es practicamente identico.
+
+### ¿El codigo refactorizado se parece al vuestro?
