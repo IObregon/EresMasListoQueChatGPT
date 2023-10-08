@@ -35,3 +35,9 @@ Por último le he pedido a la sesion nueva de ChatGPT que me haga el refactor de
 Podemos compararlo con la respuesta inicial que me dio ChatGPT (`mainInicial.js`) podemos ver que es practicamente identico.
 
 ### ¿El codigo refactorizado se parece al vuestro?
+
+# Parte 4
+
+He incluido los dos chats con ChatGPT para que veais como se cocino este intento de cata: 
+1. [ChatConContexto.md](./ChatConContexto.md)
+2. [ChatSinContexto.md](ChatSinContexto.md)
